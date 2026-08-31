@@ -1,0 +1,6 @@
+@PruebaMRP_HostAddress = http://localhost:5169
+
+GET {{PruebaMRP_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
