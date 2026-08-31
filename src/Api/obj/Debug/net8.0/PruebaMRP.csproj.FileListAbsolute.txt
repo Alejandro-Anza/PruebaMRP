@@ -69,3 +69,4 @@ C:\Users\Equipo Nuevo\source\repos\PruebaMRP\src\Api\obj\Debug\net8.0\refint\Pru
 C:\Users\Equipo Nuevo\source\repos\PruebaMRP\src\Api\obj\Debug\net8.0\PruebaMRP.pdb
 C:\Users\Equipo Nuevo\source\repos\PruebaMRP\src\Api\obj\Debug\net8.0\PruebaMRP.genruntimeconfig.cache
 C:\Users\Equipo Nuevo\source\repos\PruebaMRP\src\Api\obj\Debug\net8.0\ref\PruebaMRP.dll
+C:\Users\Equipo Nuevo\source\repos\PruebaMRP\src\Api\obj\Debug\net8.0\PruebaMRP.sourcelink.json
