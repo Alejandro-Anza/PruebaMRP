@@ -1,0 +1,45 @@
+name: .NET CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+name: .NET CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Descargar el código del repositorio
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # 2. Configurar el SDK de .NET 8
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    # 3. Restaurar las dependencias del proyecto
+    - name: Restore dependencies
+      run: dotnet restore
+
+    # 4. Compilar la solución para verificar que no hay errores
+    - name: Build solution
+      run: dotnet build --no-restore --configuration Release
+
+    # 5. Ejecutar las pruebas unitarias
+    - name: Run unit tests
+      run: dotnet test --no-build --configuration Release --verbosity normal
